@@ -4,6 +4,10 @@ body {
   line-height: 1.5;
   letter-spacing: 0.5px;
 }
+*:focus{
+outline: 2px dotted #ff7500;
+outline-offset: 3px;
+}
 .logo-link {
   transition: opacity 0.4s ease;
 }
@@ -189,7 +193,7 @@ body {
 .site-footer-link-list a:hover {
   color: #ff7500;
 }
-.site-footer-link-list a:focus{
+.site-footer-link-list a:active{
   opacity: 0.6;
 }
 /*roboto 400 500 700
