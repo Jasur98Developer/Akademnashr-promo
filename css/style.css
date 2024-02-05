@@ -1,22 +1,32 @@
-body{
-  font-family: "roboto" , "Arial" , sans-serif;
+body {
+  font-family: "roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.5px;
 }
+.logo-link {
+  transition: opacity 0.4s ease;
+}
+.logo-link:hover {
+  opacity: 0.8;
+}
+.logo-link:active {
+  opacity: 0.6;
+}
+
 .site-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
 }
-.site-header-actions{
+.site-header-actions {
   display: flex;
   align-items: center;
 }
-.sitenav-list{
+.sitenav-list {
   display: flex;
-  list-style: none; 
+  list-style: none;
 }
 .sitenav-link {
   font-weight: 500;
@@ -26,14 +36,27 @@ body{
   text-transform: uppercase;
   text-decoration: none;
   color: #000;
+  transition: color 0.4s ease, opacity 0.4s ease;
 }
-
+.sitenav-link:hover {
+  color: #ff7500;
+}
+.sitenav-link:active {
+  opacity: 0.6;
+}
 .main-link {
   font-size: 13px;
   line-height: 15px;
   background-color: #ff7500;
   color: #fff;
   text-decoration: none;
+  transition: opacity 0.4s ease;
+}
+.main-link:hover {
+  opacity: 0.8;
+}
+.main-link:active {
+  opacity: 0.6;
 }
 .hero {
   display: flex;
@@ -55,7 +78,7 @@ body{
   background-color: #ff7500;
 }
 .hero-heading {
-  font-family:"Roboto Condensed","roboto","arial",sans-serif;
+  font-family: "Roboto Condensed", "roboto", "arial", sans-serif;
   font-weight: bold;
   font-size: 40px;
   line-height: 1.2;
@@ -67,27 +90,25 @@ body{
   font-weight: 400;
 }
 .features-heading {
-  font-family: "Roboto Condensed","Robot","Arial",sans-serif;
+  font-family: "Roboto Condensed", "Robot", "Arial", sans-serif;
   width: 440px;
   font-size: 72px;
   line-height: 1.2;
 }
 .feature {
   width: 340px;
- 
 }
-.feature-list{
+.feature-list {
   display: flex;
   justify-content: space-between;
-  list-style:none;
+  list-style: none;
 }
 .features-title {
-  font-family: "Roboto Condensed","Roboto","Arial",sans-serif;
+  font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
   color: #000;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.2;
-  
 }
 .features-text {
   color: #000;
@@ -109,55 +130,67 @@ body{
   width: 440px;
 }
 .promo-heading {
-  font-family:"Roboto Condensed","roboto","arial",sans-serif;
+  font-family: "Roboto Condensed", "roboto", "arial", sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 48px;
 }
 
-
-.promo-highlight{
+.promo-highlight {
   color: #ff7500;
 }
-.promo-img{
-  width:440px;
+.promo-img {
+  width: 440px;
   height: 440px;
   object-fit: cover;
 }
-.site-footer{
-  background-color: #F8F8F8;
+.site-footer {
+  background-color: #f8f8f8;
 }
-.site-footer-top{
+.site-footer-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.site-footer-social{
+.site-footer-social {
   display: flex;
   align-items: center;
 }
-.site-footer-bottom{
+.site-footer-social a{
+  color: #252420;
+}
+.site-footer-social a:hover{
+ color: #ff7500;
+}
+.site-footer-social a:active{
+  opacity: 0.6;
+ }
+.site-footer-bottom {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
-.site-footer ul{
+
+.site-footer ul {
   list-style: none;
 }
-.site-footer-divider{
+.site-footer-divider {
   height: 2px;
   background-color: rgba(37, 36, 32, 0.5);
-
 }
-.site-footer-link-list{
+.site-footer-link-list {
   width: 224px;
   line-height: 19px;
 }
-.site-footer-link-list a{
+.site-footer-link-list a {
   text-decoration: none;
   color: #252420;
 }
-
-
+.site-footer-link-list a:hover {
+  color: #ff7500;
+}
+.site-footer-link-list a:focus{
+  opacity: 0.6;
+}
 /*roboto 400 500 700
 roboto condensed 700 */
